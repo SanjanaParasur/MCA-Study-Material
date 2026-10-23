@@ -26,10 +26,14 @@ class Stack:
 
     def reverse(self):
         temp = self.top
-        print("Reversed elememts")
+        st1 = Stack()
+
         while temp:
             st1.push(Node(temp.data))
-            temp=temp.next
+            temp = temp.next
+
+        print("Reversed elements")
+        st1.print()
 
     def print(self):
         temp = self.top
